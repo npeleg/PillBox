@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<title> Register New Client </title>
+		<link rel="stylesheet" href='/static/styles.css'>
+	</head>
+	<body>
+		<h1> New Client Registration </h1>
+		
+			<form action="" method="post" novalidate>
+			{{ form.hidden_tag() }}
+			<p>
+				{{ form.topic.label }} <br>
+				{{ form.topic(size=32) }}
+			</p>
+			<p>
+				{{ form.password.label }} <br>
+				{{ form.password(size=32) }}
+			</p>
+			<p>
+				{{ form.submit() }}
+			</p>
+			 </p>
+			</form>
+
+			<p>
+			<a href="/admin"> back to main admin page </a>
+		
+
+
+	</body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<title> {{ topic }} - Test Messages </title>
+		<link rel="stylesheet" href='/static/styles.css'>
+	</head>
+	<body>
+		<h1> {{ topic }} - Test SMS Messages </h1>
+		
+			<form action="" method="post" novalidate>
+			{{ form.hidden_tag() }}
+			<p>
+				{{ form.message.label }} <br>
+				{{ form.message(size=32) }}
+			</p>
+			<p>
+				{{ form.sender.label }} <br>
+				{{ form.sender(size=32) }}
+			</p>
+			<p>
+				{{ form.submit() }}
+			</p>
+			 </p>
+			</form>
+
+
+			<a href="/client/{{ topic }}"> Return to client page </a>
+		
+
+
+	</body>
+</html>

@@ -1,0 +1,17 @@
+<html>
+	<head>
+		<title> {{ topic }} </title>
+		<link rel="stylesheet" href='/static/styles.css'>
+	</head>
+	<body>
+		<h1> Client Add - {{ topic }} </h1>
+		
+		<div>
+			<form action="" method="post" novalidate>
+			{{ add.hidden_tag() }}
+			<p> {{ add.phone_number.label }} <br>
+			{{ add.phone_number(size=32) }} </p>
+			<p> {{ add.submit() }}</p>			
+			</form>
+	</body>
+</html>

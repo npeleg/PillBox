@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<title> {{ topic }} </title>
+		<link rel="stylesheet" href='/static/styles.css'>
+		<base href="/client/{{ topic }}/" />
+
+	</head>
+	<body>
+		<h1> Client Display - {{ topic }} </h1>
+		{% for subscriber in subscribers %}
+		
+		<div>
+			 <p> {{ subscriber }} 
+			<form action="" method="post" novalidate>
+			{{ form.hidden_tag() }}
+			 <input type="submit" name={{ subscriber }} value="Delete">
+			 </p>
+			</form>
+		 </div>
+		{% endfor %}
+		
+		<p>
+		<a href="add"> Add a new subscriber </a> <br>
+		<a href="testpublish"> Send a Test SMS Message to subscribers </a> <br>
+		<a href="/logout"> Logout </a>
+
+
+	</body>
+</html>

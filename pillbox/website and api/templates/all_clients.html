@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<title> Clients Display Page </title>
+		<link rel="stylesheet" href='/static/styles.css'>
+	</head>
+	<body>
+		<h1> Admin Control Panel </h1>
+
+		<h2> List of clients: </h2>
+		<div class="tags">
+		<ul>
+		{% for topic in topics %}
+		<li> <div> <p> <a href='/client/{{ topic }}'> {{ topic }} </a> </p> </div> </li>
+		{% endfor %}
+		</ul>
+		</div>
+		<p> <a href='/register'> register a new client </a> </p>
+	</body>
+</html>

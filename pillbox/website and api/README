@@ -1,0 +1,2 @@
+to activate the site enter this directory and use this command in terminal:
+env FLASK_APP=server flask run --host=0.0.0.0 --port=80
