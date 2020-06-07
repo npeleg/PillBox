@@ -8,6 +8,8 @@ The PillBOX uses a magnetic hall effect sensor to detect if the cell has been op
 
 The motivation for such a product is that most of the people who use such pill boxes are elderly people, who tend to forget taking their pills or which pills they are supposed to take. Our system alerts them via LED and alerts family members of friends if pills were not taken, allowing the contacts to take action to make sure the pills are taken on time, each time.
 
+PillBox was written by Peleg Neufeld, Noa Jaffe and Amir Johnpur.
+
 ## System Components
 
 I. Texas Instruments CC1350 LaunchPad – runs the BLE app and the main PillBOX application logic, including sensor logic.
